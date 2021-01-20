@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC
+"-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+
+<style>
+
+input[type=text], select {  /*입력 칸 (input field) 의 폭을 지정하기 위해, 폭 속성 (width property) 를 사용하였습니다.*/ 
+padding: 12px 20px; 
+margin: 8px 0; 
+display: inline-block; 
+border: 1px solid #ccc; 
+border-radius: 4px; 
+box-sizing: border-box;
+}
+</style>
+
+<body>
+	<h2> 책 등록 Form </h2>
+   
+    <form method = "post" action="memberInsert.jsp" >
+    
+         책이름 : <input type = "text" name="bn"/> <br/>
+         출판사 : <input type = "text" name="pub"/> <br/>
+         작성자 : <input type = "text" name="name"><br/>
+         희망가 : <input type = "text" name="age"/> <br/>
+         이메일 : <input type="text" name="req" /><br/>
+         내용 : <input type = "text" name="cont" style="width:500px; height:200px;"/><br/>
+        <input type="submit" value="등록" />
+        <input type="button" value="책리스트" onclick="location.href='memberSelect.jsp'" />
+    </form>
+</body>
+</html>
